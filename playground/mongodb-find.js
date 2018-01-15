@@ -31,7 +31,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err,db) => {
      //
      // });
 
-      db.collection('Users').find({location: 'Tel-aviv'}).toArray().then((docs) =>{
+      db.collection('Users').find({location: 'T.el-aviv'}).toArray().then((docs) =>{
       console.log('Users');
         console.log(JSON.stringify(docs,undefined,2));
       },(err) => {
